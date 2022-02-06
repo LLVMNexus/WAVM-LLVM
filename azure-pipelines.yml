@@ -48,10 +48,10 @@ stages:
           baseName: 'Win64'
           platform: 'x64'
 
-      # MacOS 10.14
+      # MacOS 10.15
       - template: /azure-pipelines/posix-build-job-template.yml
         parameters:
-          vmImage: 'macOS-10.14'
+          vmImage: 'macOS-10.15'
           baseName: 'MacOS'
           cmakeArgs: -DCMAKE_OSX_DEPLOYMENT_TARGET=10.11
           installToolchainSteps:
